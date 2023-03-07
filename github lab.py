@@ -1,4 +1,4 @@
-# Lab 6 - GitHub lab
+# Lab 6 - GitHub lab - Dominic Ghizzoni
 
 def encode(password):
     encoded = ""
@@ -6,14 +6,6 @@ def encode(password):
         digit = int(i) + 3
         encoded += str(digit)
     return encoded
-
-
-def decode(password):
-    decoded = ""
-    for i in password:
-        digit = int(i) - 3
-        decoded += str(digit)
-    return decoded
 
 
 def main():
@@ -32,10 +24,6 @@ def main():
         if menu_selection == 1:
             password = input("Please enter your password to encode: ")
             encoded = encode(password)
-
-        elif menu_selection == 2:
-            decoded = decode(encoded)
-            print("The encoded password is " + encoded + " and the original password is " + decoded + ".")
 
         elif menu_selection == 3:
             break
